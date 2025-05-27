@@ -30,7 +30,8 @@ display: inline-block;
     margin:  0 0 1;
     flex-grow: 1;
 }
-@media screen and (min-width: 50em){
+\*@container  (min-width: 50em)
+{
     .card{
         flex-direction: row;
     }
@@ -50,4 +51,7 @@ display: inline-block;
         flex-direction: row;
     }
     
+}
+.card_wrapper{
+    container-type: inline-size;
 }
