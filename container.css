@@ -30,7 +30,7 @@ display: inline-block;
     margin:  0 0 1;
     flex-grow: 1;
 }
-\*@container  (min-width: 50em)
+\*@container  cardWrapper (min-width: 50em)
 {
     .card{
         flex-direction: row;
@@ -46,7 +46,7 @@ display: inline-block;
     gap: 1em;
     flex-direction: column;
 }
-@container screen and (min-width:70em) {
+@container main (min-width:70em) {
     .cards_container{
         flex-direction: row;
     }
@@ -57,4 +57,10 @@ display: inline-block;
 }
 .card_wrapper, main{
     container-type: inline-size;
+}
+.card_wrapper{
+    container-name: cardWrapper;
+}
+.main{
+    container-name: main;
 }
